@@ -45,12 +45,12 @@ func ExampleDereference() {
 	})
 
 	fmt.Println(v)
-	// Output: example
 
 	// establish variable "v" of type string, without using functional options.
 	v = text.Dereference(pointer)
 
 	fmt.Println(v)
+	// Output: example
 	// Output: example
 }
 
@@ -61,11 +61,11 @@ func ExamplePointer() {
 	})
 
 	fmt.Println(*(pointer))
-	// Output: example
 
 	// create a pointer of type string with reference value: "example", without using functional options.
 	pointer = text.Pointer("example")
 
 	fmt.Println(*(pointer))
+	// Output: example
 	// Output: example
 }
